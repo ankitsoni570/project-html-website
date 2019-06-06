@@ -2,12 +2,12 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'gcr.io/chrome-empire-210218/quickstart', '.' ]
   args:
-  - kms
-  - decrypt
-  - --ciphertext-file=secrets.json.enc
-  - --plaintext-file=secrets.json
-  - --location=global
-  - --keyring=TestKeyRing
-  - --key=TestKey
+    - kms
+    - decrypt
+    - --ciphertext-file secrets.txt.encrypted
+    - --plaintext-file secrets.txt.decrypted
+    - --location=global
+    - --keyring test
+    - --key quickstart
 images:
 - 'gcr.io/chrome-empire-210218/quickstart'
