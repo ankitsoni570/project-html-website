@@ -1,13 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/sample-html'
   args: [ 'build', '-t', 'gcr.io/chrome-empire-210218/sample-html', '.' ]
-  args:
-    - kms
-    - decrypt
-    - --ciphertext-file secrets.txt.encrypted
-    - --plaintext-file secrets.txt.decrypted
-    - --location=global
-    - --keyring test
-    - --key quickstart
 images:
 - 'gcr.io/chrome-empire-210218/sample-html'
