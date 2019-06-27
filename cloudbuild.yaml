@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/sample-html'
-  args: [ 'build', '-t', 'gcr.io/chrome-empire-210218/sample-html', '.' ]
+  args: [ 'build', '-t', 'gcr.io/concrete-crow-244606/sample-html', '.' ]
 images:
-- 'gcr.io/chrome-empire-210218/sample-html'
+- 'gcr.io/concrete-crow-244606/sample-html'
